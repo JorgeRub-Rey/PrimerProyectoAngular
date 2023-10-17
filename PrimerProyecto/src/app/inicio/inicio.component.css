@@ -1,0 +1,61 @@
+
+.colorNombre{
+    background-color:violet
+    
+}
+
+.colorTipos{
+    background:coral
+    
+}
+
+.contenedorimagen {
+    text-align: center;
+  }
+
+  .imagenDerecha {
+    text-align: right;
+}
+
+.imagenIzquierda {
+    width: 50%;
+            display: inline-block;
+    text-align: left;
+}
+
+.centrar {
+    
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -390px;
+  }
+
+  .contenedorImagen {
+    text-align: center;
+  }
+
+  .imagenDerecha {
+    position: absolute;
+  top: 0;
+  right: 0;
+  
+  
+}
+
+.barra-de-color {
+    width: 100%; /* Ancho del 100% de su contenedor */
+    height: 50px; /* Altura de la barra */
+    background-color: #dd77be; /* Color de fondo, puedes cambiarlo a tu preferencia */
+}
+
+.barraAbajo {
+  width: 100%;
+  height: 100px; /* Cambia el valor de altura según tus necesidades */
+  background-color: #dd77be;
+}
+
+
+
+
+

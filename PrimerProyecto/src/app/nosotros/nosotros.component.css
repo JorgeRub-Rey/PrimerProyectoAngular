@@ -1,0 +1,62 @@
+.imagenDerecha {
+    position: absolute;
+  top: 0;
+  right: 0;
+  
+  
+}
+
+
+.imagenIzquierda {
+    width: 50%;
+            display: inline-block;
+    text-align: left;
+}
+
+
+.centrar {
+    
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -390px;
+  }
+
+
+
+  .centrarNuevo mat-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .centrar-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que el contenedor ocupe toda la altura disponible */
+  }
+  
+  .centrar-imagen {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    max-height: 100%; /* Asegura que la imagen no se desborde del contenedor */
+  }
+
+  .colorNombre{
+    background-color:violet;
+    height: 100px;
+    
+}
+
+.barraAbajo {
+    width: 100%;
+    height: 100px; /* Cambia el valor de altura según tus necesidades */
+    background-color: #dd77be;
+  }
+
+  .centrarHora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%; /* Asegura que el contenedor ocupe toda la altura disponible */
+  }
