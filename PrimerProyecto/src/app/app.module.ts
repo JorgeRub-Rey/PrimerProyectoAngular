@@ -21,6 +21,10 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatMenuModule} from '@angular/material/menu';
 
 import {MatTabsModule} from '@angular/material/tabs';
+import { MenuComponent } from './menu/menu.component';
+
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 
 
@@ -28,7 +32,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 const appRoutes: Routes=[
   {path:'inicio',component:InicioComponent},
   {path:'nosotros',component:NosotrosComponent},
-  {path:'login',component:LoginComponent}
+  {path:'login',component:LoginComponent},
+  {path:'menu',component:MenuComponent}
 ]
 
 @NgModule({
@@ -36,7 +41,8 @@ const appRoutes: Routes=[
     AppComponent,
     InicioComponent,
     NosotrosComponent,
-    LoginComponent
+    LoginComponent,
+    MenuComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes,{enableTracing: true}),
@@ -45,7 +51,7 @@ const appRoutes: Routes=[
     BrowserAnimationsModule,
     MatProgressBarModule,
     MatIconModule, MatButtonModule,MatToolbarModule,
-    MatChipsModule,MatMenuModule,MatTabsModule
+    MatChipsModule,MatMenuModule,MatTabsModule,MatSidenavModule,MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
