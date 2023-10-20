@@ -57,7 +57,8 @@ const appRoutes: Routes=[
     BrowserAnimationsModule,
     MatProgressBarModule,
     MatIconModule, MatButtonModule,MatToolbarModule,
-    MatChipsModule,MatMenuModule,MatTabsModule,MatSidenavModule,MatListModule,MatTableModule
+    MatChipsModule,MatMenuModule,MatTabsModule,MatSidenavModule,
+    MatListModule,MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

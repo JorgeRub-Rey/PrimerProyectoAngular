@@ -11,7 +11,7 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {matricula: 12762, curp: ' COPJ040126HVZRRNA4', nombre: 'Jonathan Cortes Pérez', telefono: 8287686734},
+  {matricula: 12762, curp: 'COPJ040126HVZRRNA4', nombre: 'Jonathan Cortes Pérez', telefono: 8287686734},
   {matricula: 12780, curp: 'SAVY040926MNLNZRA0', nombre: 'Yaretzi Yamileth Sandoval Vázquez', telefono:  5628414013},
   {matricula: 12772, curp: 'LUZA010301MNLCXLA2', nombre: 'Alejandra Jacqueline Lucio Zúñiga', telefono: 8212116688},
   {matricula: 12753, curp: 'AAMC041101HNLLNRA0', nombre: 'Carlos Alberto Alvarez Montes', telefono: 8443107971},
@@ -24,7 +24,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {matricula: 12781, curp: 'SAGB990213HNLRNR06', nombre: 'Brandon Arturo Saravia Gonzales', telefono: 8211110434},
   {matricula: 12754, curp: 'BEGF040906HTSRZLA1', nombre: 'Felipe de Jesús Bernal Gazca', telefono: 8341303508},
   {matricula: 12779, curp: 'RURJ041030HNLBYRA0', nombre: 'Jorge Alberto Rubio Reyna', telefono: 5631723441},
-
+ 
 ];
 
 

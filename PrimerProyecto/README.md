@@ -44,3 +44,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 <!--Nosotros -->
 ![Alt text](image-2.png)
+
+
+
+<!-- Tabla -->
+![Alt text](image-4.png)
