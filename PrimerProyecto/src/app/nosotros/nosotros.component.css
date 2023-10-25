@@ -60,3 +60,33 @@
     align-items: center;
     height: 80%; /* Asegura que el contenedor ocupe toda la altura disponible */
   }
+
+  .sidenav-container {
+    height: 100%;
+    position: inherit;
+  }
+  
+  .sidenav {
+    width: 250px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .mat-list-item {
+    cursor: pointer;
+  }
+  
+  .mat-sidenav-container {
+    position: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .lista{
+    height: 100%;
+    width: 150px;
+}

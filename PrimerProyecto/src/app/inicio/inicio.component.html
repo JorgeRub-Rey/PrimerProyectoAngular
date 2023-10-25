@@ -1,55 +1,67 @@
 
-<p>
-  <mat-toolbar class="colorNombre">
-    <span>Boutique Alberta</span>
-  </mat-toolbar>
-</p>
-
-<div class="contenedorimagen">
-  <img   src="assets/Foto Alberta.jpg" width="600" height="500">
-</div>
-
-
-
-
-
-
-  <mat-tab-group>
-
-    <div class="imagenIzquierda">
-      <mat-tab label="Casual">
-        <img   src="assets/Ropa CasualUno.jpg" width="350" height="400"> 
-        <img src="assets/Ropa CasualDos.jpg" class="centrar" width="400" height="360">
-        <img src="assets/Ropa CasualTres.jpg" class="imagenDerecha" width="370" height="400">  
-      </mat-tab>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="over" class="sidenav">
+   
+    <mat-nav-list class="lista">
+      
+      <a mat-list-item href="http://localhost:4200/menu"> <b>menu</b>  </a>
+      <a mat-list-item href="http://localhost:4200/nosotros"> <b>nosotros</b>  </a>
+      <a mat-list-item href="http://localhost:4200/tabla"> <b>tabla</b>  </a>
+     
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Inicio</span>
+    </mat-toolbar>
+    <div class="contenedorimagen">
+      <img   src="assets/Foto Alberta.jpg" width="600" height="500">
     </div>
     
-
-
-    <div class="imagenIzquierda">
-      <mat-tab label="Formal">  
-        <img   src="assets/Ropa FormalUno.jpg" width="350" height="400"> 
-        <img src="assets/Ropa FormalDos.jpg" class="centrar" width="400" height="360">
-        <img src="assets/Ropa FormalTres.jpg" class="imagenDerecha" width="370" height="350">
-      </mat-tab>
-    </div>
-
     
-    <div class="imagenIzquierda">
-      <mat-tab label="Vintaje">  
-        <img   src="assets/Ropa VintajeUno.jpg" width="350" height="350"> 
-        <img src="assets/Ropa VintajeDos.jpg" class="centrar" width="400" height="360">
-        <img src="assets/Ropa VintajeTres.jpg" class="imagenDerecha" width="390" height="400">
-      </mat-tab>
-    </div>
+      <mat-tab-group>
+    
+        <div class="imagenIzquierda">
+          <mat-tab label="Casual">
+            <img   src="assets/Ropa CasualUno.jpg" width="350" height="400"> 
+            <img src="assets/Ropa CasualDos.jpg" class="centrar" width="400" height="360">
+            <img src="assets/Ropa CasualTres.jpg" class="imagenDerecha" width="370" height="400">  
+          </mat-tab>
+        </div>
+        
+    
+    
+        <div class="imagenIzquierda">
+          <mat-tab label="Formal">  
+            <img   src="assets/Ropa FormalUno.jpg" width="350" height="400"> 
+            <img src="assets/Ropa FormalDos.jpg" class="centrar" width="400" height="360">
+            <img src="assets/Ropa FormalTres.jpg" class="imagenDerecha" width="370" height="350">
+          </mat-tab>
+        </div>
+    
+        
+        <div class="imagenIzquierda">
+          <mat-tab label="Vintaje">  
+            <img   src="assets/Ropa VintajeUno.jpg" width="350" height="350"> 
+            <img src="assets/Ropa VintajeDos.jpg" class="centrar" width="400" height="360">
+            <img src="assets/Ropa VintajeTres.jpg" class="imagenDerecha" width="390" height="400">
+          </mat-tab>
+        </div>
+    
+      </mat-tab-group>
+    
+        <p>
+          <mat-toolbar class="barraAbajo">
+            <span> 2023 Boutique Alberta. Todos los derechos reservados. </span>
+          </mat-toolbar>
+        </p>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 
-  </mat-tab-group>
 
-    <p>
-      <mat-toolbar class="barraAbajo">
-        <span> 2023 Boutique Alberta. Todos los derechos reservados. </span>
-      </mat-toolbar>
-    </p>
 
 
   
