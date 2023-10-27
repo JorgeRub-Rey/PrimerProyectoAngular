@@ -38,4 +38,78 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class TablaComponent {
   displayedColumns: string[] = ['matricula', 'curp', 'nombre', 'telefono'];
   dataSource = ELEMENT_DATA;
+
+  openPopup() {
+
+    const popupWindow = window.open('', '_blank', 'width=300,height=300');
+    
+    if (popupWindow) {
+
+      const popupContent = `
+      <html>
+      <head>
+        <title>Datos</title>
+        <style>
+          body {
+            background-color: purple;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+          }
+          h2 {
+            color: white;
+          }
+          form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+          }
+          input[type="text"],
+          input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+          }
+          button {
+            width: 100%;
+            background-color: purple;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 3px;
+            cursor: pointer;
+          }
+          button:hover {
+            background-color: #330066;
+          }
+        </style>
+      </head>
+      <body>
+        <h2>Ingresar Datos</h2>
+        <form>
+          <input type="text" placeholder="Matricula">
+          <input type="number" placeholder="Nombre">
+          <input type="text" placeholder="Curp">
+          <input type="number" placeholder="Telefono">
+          <button type="submit">Enviar</button>
+        </form>
+      </body>
+    </html>
+      `;
+  
+      popupWindow.document.open();
+      popupWindow.document.write(popupContent);
+      popupWindow.document.close();
+    } else {
+
+      console.error('No se pudo abrir la ventana emergente.');
+    }
+  }
 }

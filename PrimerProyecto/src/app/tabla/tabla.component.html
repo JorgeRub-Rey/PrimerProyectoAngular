@@ -16,6 +16,7 @@
       </button>
       <span>Tabla</span>
     </mat-toolbar>
+    <button class="btn success" style="margin-left: 45%;" (click)="openPopup()">Ventana Emergente</button>
 
 
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -50,9 +51,15 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
 
+    
+
+    
 
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+
+
 
 
 
